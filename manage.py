@@ -5,7 +5,7 @@ import sys
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "conduit.settings")
     try:
-         if os.environ.get("DEBUG_MODE", False) == True:
+        if os.environ.get("DEBUG_MODE", False) == True:
             import ptvsd
             ptvsd.enable_attach()
             ptvsd.wait_for_attach()
